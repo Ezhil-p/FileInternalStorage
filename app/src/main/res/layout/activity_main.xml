@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:padding="50dp"
+        android:textSize="20sp"
+        android:hint="filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filename" />
+    <EditText
+        android:padding="50dp"
+        android:textSize="20sp"
+        android:layout_below="@id/filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="file_contents"
+        android:id="@+id/file_cnt"/>
+    <Button
+        android:layout_below="@id/file_cnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="store_file"
+        android:id="@+id/store"/>
+    <Button
+        android:text="show_file"
+        android:layout_below="@id/store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_file"/>
+
+</RelativeLayout>
